@@ -3,18 +3,40 @@
 	"name": "NicCage",
 	"version": "1.0",
 
-	"description": "This addon replaces images with pictures of Nicholas Cage. What isn't there to love"
+	"description": "This addon replaces images with pictures of Nicholas Cage. What isn't there to love",
 	
 	"applications":{
 		"gecko":{
 			"id":"pvrs12@gmail.com"
 		}
-	}
+	},
 
 	"content_scripts":[
 		{
-			"matches":["*"],
+			"matches":["<all_urls>"],
 			"js":["cageify.js"]
 		}
+	],
+	"web_accessible_resources":[
+		"images/nic0.jpg",
+		"images/nic1.jpg",
+		"images/nic2.jpg",
+		"images/nic3.jpg",
+		"images/nic4.jpg",
+		"images/nic5.jpg",
+		"images/nic6.jpg",
+		"images/nic7.jpg",
+		"images/nic8.jpg",
+		"images/nic9.jpg",
+		"images/nic10.jpg",
+		"images/nic11.jpg",
+		"images/nic12.jpg",
+		"images/nic13.jpg",
+		"images/nic14.jpg",
+		"images/nic15.jpg",
+		"images/nic16.jpg",
+		"images/nic17.jpg",
+		"images/nic18.jpg",
+		"images/nic19.jpg"
 	]
 }
