@@ -1,0 +1,20 @@
+{
+	"manifest_version":2,
+	"name": "NicCage",
+	"version": "1.0",
+
+	"description": "This addon replaces images with pictures of Nicholas Cage. What isn't there to love"
+	
+	"applications":{
+		"gecko":{
+			"id":"pvrs12@gmail.com"
+		}
+	}
+
+	"content_scripts":[
+		{
+			"matches":["*"],
+			"js":["cageify.js"]
+		}
+	]
+}
