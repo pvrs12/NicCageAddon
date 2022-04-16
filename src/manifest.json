@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "NicCage",
+	"version": "1.2",
+
+	"description": "This addon replaces images with pictures of Nicholas Cage. What isn't there to love?",
+	
+	"applications":{
+		"gecko":{
+			"id":"jid1-R4K9NQmQx8Ciug@jetpack"
+		}
+	},
+	"icons": {
+		"128": "icon-128.png",
+		"64": "icon-64.png",
+		"48": "icon-48.png",
+		"32": "icon-32.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"cageify.js"
+			]
+		}
+	],
+	"permissions": [
+		"storage"
+	],
+	"options_ui": {
+		"page": "options.html",
+		"browser_style": true
+	},
+	"homepage_url": "http://github.com/pvrs12/NicCageAddon"
+}

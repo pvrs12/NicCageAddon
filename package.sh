@@ -1,2 +1,2 @@
 #!/bin/sh
-cd json && jar -cMf ../niccage.xpi *
+cd src && jar -cMf ../niccage.xpi *
